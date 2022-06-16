@@ -1,3 +1,41 @@
-Hello
-My name is Lera
-What is your name? 
+[{
+		"id": 1,
+		"title": "The Name field accepts all invalid values",
+		"modul": "User registration",
+		"Environment": "РС Google Chrome versia 101.0.4951.67, (64 bit)",
+		"Severity": "Major",
+		"Priority": "Medium",
+		"autor": "Zakharova Valeria",
+		"Precondition": ["Registration form is open https://account.mail.ru/signup?from=navi&lang=ru_RU&siteid=169&app_id_mytracker=58519", "User is not registered"],
+		"steps": {
+			"one": "Entering letters in a different case in the middle of a word",
+			"two": "Entering letters and numbers together",
+			"three": "Entering code characters and special characters, including currency symbols",
+			"for": "Space only input",
+			"five": "Press create button"
+		},
+		"Expected result": "at each attempt to enter invalid data, the system will display an error The name field is filled incorrectly, the system will not allow to the next step and will not register the user",
+		"Actual result": "The Name field takes all invalid values at all steps, the system registers the user",
+		"Status": "New"
+	},
+	{
+		"id": 2,
+		"title": "Поле Фамилия принимает все невалидные значения",
+		"modul": "User registration",
+		"Environment": "РС Google Chrome versia 101.0.4951.67, (64 bit)",
+		"Severity": "Major",
+		"Priority": "Medium",
+		"autor": "Zakharova Valeria",
+		"Precondition": ["Registration form is open https://account.mail.ru/signup?from=navi&lang=ru_RU&siteid=169&app_id_mytracker=58519", "User is not registered"],
+		"steps": {
+			"one": "Entering letters in a different case in the middle of a word",
+			"two": "Entering letters and numbers together",
+			"three": "Entering code characters and special characters, including currency symbols",
+			"for": "Space only input",
+			"five": "Press create button"
+		},
+		"Expected result": "at each attempt to enter invalid data, the system will display an error The last name field is filled incorrectly, the system will not allow to the next step and will not register the user",
+		"Actual result": "The last name field takes all invalid values at all steps, the system registers the user",
+		"Status": "New"
+	}
+]
