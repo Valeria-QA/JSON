@@ -1,4 +1,4 @@
-[{
+{
 		"id": 1,
 		"title": "The Name field accepts all invalid values",
 		"modul": "User registration",
@@ -38,4 +38,3 @@
 		"Actual result": "The last name field takes all invalid values at all steps, the system registers the user",
 		"Status": "New"
 	}
-]
